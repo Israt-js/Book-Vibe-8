@@ -1,6 +1,4 @@
-import { Outlet } from "react-router-dom"
-
-function App() {
+const Nav = () => {
   return (
     <>
     <div className="navbar bg-base-100">
@@ -32,10 +30,9 @@ function App() {
     <a className="btn bg-green-500 text-white">Sign In</a>
     <a className="btn">Sign Up</a>
   </div>
-</div>
-  <Outlet></Outlet>
+  </div>
   </>
   )
 }
 
-export default App
+export default Nav;

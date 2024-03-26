@@ -1,24 +1,25 @@
-import React, { Children } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Banner from './Banner.jsx';
+import Root from './component/Root/Root';
+import Banner from './component/home/Banner';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App></App>,
+    element: <Root></Root>,
+    children: [
+      {
+        path: "/",
+        element: <Banner></Banner>
+      },
+    ],
   },
-  {
-    path: "/banner",
-    element: <Banner></Banner>
-  },
-  Children
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
