@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const Nav = () => {
   return (
     <>
@@ -19,10 +21,8 @@ const Nav = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-    <li><a>Home</a></li>
-      <li>
-          <summary>Listed Books</summary>
-      </li>
+    <li> <NavLink to={"/"}>Home</NavLink></li>
+      <li> <NavLink to={"/list/"}>Listed Books</NavLink></li>
       <li><a>Pages to Read</a></li>
     </ul>
   </div>
