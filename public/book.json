@@ -1,0 +1,83 @@
+{
+    "books": [
+      {
+        "bookId": 1,
+        "bookName": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "image": "mockingbird.jpg",
+        "review": "A timeless classic exploring themes of racial injustice and moral growth.",
+        "totalPages": 281,
+        "rating": 4.5,
+        "category": "Fiction",
+        "tags": ["Drama", "Social Issues"],
+        "publisher": "J. B. Lippincott & Co.",
+        "yearOfPublishing": 1960
+      },
+      {
+        "bookId": 2,
+        "bookName": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "image": "the_hobbit.jpg",
+        "review": "An enchanting adventure set in Middle-earth, filled with memorable characters and epic quests.",
+        "totalPages": 310,
+        "rating": 4.9,
+        "category": "Fantasy",
+        "tags": ["Adventure", "Epic", "Quest"],
+        "publisher": "Allen & Unwin",
+        "yearOfPublishing": 1937
+      },
+      {
+        "bookId": 3,
+        "bookName": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "image": "catcher.jpg",
+        "review": "A coming-of-age novel that captures the angst of adolescence.",
+        "totalPages": 277,
+        "rating": 4.3,
+        "category": "Fiction",
+        "tags": ["Young Adult", "Classic"],
+        "publisher": "Little, Brown and Company",
+        "yearOfPublishing": 1951
+      },
+      {
+        "bookId": 4,
+        "bookName": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "image": "pride.jpg",
+        "review": "A delightful romantic comedy of manners set in Regency England.",
+        "totalPages": 279,
+        "rating": 4.6,
+        "category": "Classic",
+        "tags": ["Romance", "Satire"],
+        "publisher": "T. Egerton, Whitehall",
+        "yearOfPublishing": 1813
+      },
+      {
+        "bookId": 5,
+        "bookName": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "image": "gatsby.jpg",
+        "review": "An evocative portrayal of the Jazz Age and the American Dream.",
+        "totalPages": 218,
+        "rating": 4.4,
+        "category": "Fiction",
+        "tags": ["Historical", "Romance"],
+        "publisher": "Charles Scribner's Sons",
+        "yearOfPublishing": 1925
+      },
+      {
+        "bookId": 6,
+        "bookName": "Harry Potter and the Sorcerer's Stone",
+        "author": "J.K. Rowling",
+        "image": "harry_potter.jpg",
+        "review": "A captivating fantasy adventure that introduces readers to the magical world of Hogwarts.",
+        "totalPages": 309, 
+        "rating": 4.8,
+        "category": "Fantasy",
+        "tags": ["Magic", "Adventure"],
+        "publisher": "Bloomsbury Publishing",
+        "yearOfPublishing": 1997
+      }
+    ]
+  }
+  
