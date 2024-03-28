@@ -12,6 +12,17 @@ function ListedBooksPage() {
 
   const handleSortChange = (e) => {
     setSortBy(e.target.value);
+    // Sort books based on the selected sorting criteria
+    const sortedBooks = [...books].sort((a, b) => {
+      if (sortBy === 'rating') {
+        return b.rating - a.rating;
+      } else if (sortBy === 'pages') {
+        return a.totalPages - b.totalPages;
+      } else if (sortBy === 'year') {
+        return a.publishedYear - b.publishedYear;
+      }
+    });
+    setBooks(sortedBooks);
   };
 
   const handleAddToRead = () => {
@@ -28,12 +39,12 @@ function ListedBooksPage() {
       <h2 className="text-2xl font-extrabold text-center pt-5 bg-slate-100 h-20 w-auto text-black">Books</h2>
       </header>
       <div>
-        <label className='' htmlFor="sort">Sort by:
-        <select id="sort" value={sortBy} onChange={handleSortChange}>
-          <option value="rating">Rating</option>
-          <option value="pages">Number of Pages</option>
-          <option value="year">Published Year</option>
-        </select>
+      <label className='items-center ml-23 bg-green-400 rounded-md p-1' htmlFor="sort">Sort by:
+          <select id="sort" value={sortBy} onChange={handleSortChange}>
+            <option value="rating">Rating</option>
+            <option value="pages">Number of Pages</option>
+            <option value="year">Published Year</option>
+          </select>
         </label>
       </div>
       <div>
