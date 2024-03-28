@@ -34,7 +34,7 @@ const Book = () => {
                       <div className="book-details">
                         <div className="tags-container flex flex-wrap p-2">
                           {book.tags.map((tag, tagIndex) => (
-                            <span key={tagIndex} className="mr-2 mb-2 bg-lime-200 rounded-md px-2 py-1 text-md font-medium text-green-400">{tag}</span>
+                            <span key={tagIndex} className="mr-2 mb-2 text-black rounded-md px-2 py-1 text-md font-medium bg-green-400">{tag}</span>
                           ))}
                         </div>
                           <h2 className="text-xl font-bold pl-5">{book.bookName}</h2>
