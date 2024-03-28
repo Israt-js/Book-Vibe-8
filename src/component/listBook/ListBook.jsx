@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function ListedBooksPage() {
-  const [sortBy, setSortBy] = useState(null);
+  const [sortBy, setSortBy] = useState();
   const [books, setBooks] = useState([]);
   const [tab, setTab] = useState('read');
 
@@ -28,7 +28,7 @@ function ListedBooksPage() {
       <h2 className="text-2xl font-extrabold text-center pt-5 bg-slate-100 h-20 w-auto text-black">Books</h2>
       </header>
       <div>
-        <label htmlFor="sort">Sort by:
+        <label className='' htmlFor="sort">Sort by:
         <select id="sort" value={sortBy} onChange={handleSortChange}>
           <option value="rating">Rating</option>
           <option value="pages">Number of Pages</option>

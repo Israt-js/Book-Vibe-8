@@ -12,7 +12,7 @@ const Nav = () => {
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
         <li> <NavLink to={"/"}>Home</NavLink></li>
         <li> <NavLink to={"/list/"}>Listed Books</NavLink> </li>
-        <li> <NavLink>Pages to Read</NavLink> </li>
+        <li> <NavLink to={"/chart/"}>Pages to Read</NavLink> </li>
       </ul>
     </div>
     <a className="btn btn-ghost text-xl">BookAll</a>
@@ -21,7 +21,7 @@ const Nav = () => {
     <ul className="menu menu-horizontal px-1">
     <li> <NavLink to={"/"}>Home</NavLink></li>
       <li> <NavLink to={"/list/"}>Listed Books</NavLink></li>
-      <li> <NavLink>Pages to Read</NavLink> </li>
+      <li> <NavLink to={"/chart/"}>Pages to Read</NavLink> </li>
     </ul>
   </div>
   <div className="navbar-end">

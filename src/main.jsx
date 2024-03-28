@@ -10,6 +10,7 @@ import Root from './component/Root/Root';
 import Banner from './component/home/Banner';
 import BookDetailsPage from './component/bookd/BookDetailsPage';
 import ListBook from './component/listBook/ListBook';
+import PagToRead from './component/listBook/PagToRead';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
         path: "/list/",
         element: <ListBook></ListBook>,
       },
+      {
+        path: "/chart/",
+        element: <PagToRead></PagToRead>
+      }
     ],
   },
 ]);
